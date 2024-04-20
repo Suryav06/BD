@@ -1,0 +1,91 @@
+/* Importing Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Poppins:wght@200;300;400&family=Roboto:ital,wght@0,100;0,300;0,400;1,100&family=Style+Script&display=swap');
+
+/* Resetting default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* General styles */
+body {
+  font-family: "Style Script", cursive;
+  font-weight: 400;
+  font-style: normal;
+  color: black;
+}
+
+/* Video styles */
+video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  position: fixed;
+  z-index: -1;
+}
+
+/* Button styles */
+.button-1 {
+  background-color: #EA4C89;
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: black;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  height: 40px;
+  line-height: 20px;
+  list-style: none;
+  margin-left: 260px;
+  margin-top: 20px;
+  outline: none;
+  padding: 10px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: color 100ms;
+  vertical-align: baseline;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-1:hover,
+.button-1:focus {
+  background-color: #F082AC;
+}
+
+/* Content container styles */
+.b1 {
+  font-size: 35px;
+  margin-left: 250px;
+  padding-top: 100px;
+}
+
+/* Span styles */
+span {
+  color: #ea72a0;
+}
+
+/* Media Query for Small Screens */
+@media screen and (max-width: 768px) {
+  video {
+    width: 100%;
+    height: auto;
+  }
+
+  .b1 {
+    font-size: 24px;
+    margin-left: 20px;
+    padding-top: 200px;
+  }
+
+  .button-1 {
+    margin-left: calc(50% - 80px);
+    margin-top: 20px;
+  }
+}

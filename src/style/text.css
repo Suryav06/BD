@@ -1,0 +1,99 @@
+/* Importing Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Poppins:wght@200;300;400&family=Roboto:ital,wght@0,100;0,300;0,400;1,100&family=Style+Script&display=swap');
+
+/* Resetting default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* General styles */
+body {
+  font-family: "Style Script", cursive;
+  font-weight: 400;
+  font-style: normal;
+  color: black;
+}
+
+/* Video styles */
+video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* Image styles */
+img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  position: fixed;
+  border-radius: 40px;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+/* Container styles */
+.b2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 80px;
+  position: relative;
+  z-index: 2;
+}
+
+/* Heading styles */
+.b2 h2 {
+  font-weight: 600;
+  font-size: 30px;
+  padding-right: 600px;
+}
+
+/* Paragraph styles */
+.b2 p {
+  font-size: 20px;
+}
+
+/* Span styles */
+.b2 span {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+/* Media Query for Small Screens */
+@media screen and (max-width: 768px) {
+  img {
+    height: 90vh;
+    width: 100%;
+    margin: 0;
+    border-radius: 30px;
+    margin-top: 40px;
+  }
+
+  video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .b2 {
+    padding-top: 150px;
+    text-align: center;
+  }
+
+  .b2 h2 {
+    padding-right: 0;
+    font-size: 24px;
+  }
+
+  .b2 p,
+  .b2 span {
+    font-size: 16px;
+  }
+}
